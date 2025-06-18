@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(227, 114, 114);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.container {
+    background-color: rgb(88, 16, 32);
+    padding: 20px;
+    border-radius: 20px;
+}
+.info {
+    text-align: center;
+}
+.info h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
+    background: linear-gradient(90deg, red 0%, rgb(93, 93, 15) 25%,
+     orange 50%, transparent 100%);
+    background-clip: text;
+    color: transparent;
+
+}
+.calculator {
+    /* background-color: rgba(220, 89, 89, 0.422); */
+    /* backdrop-filter: blur(10px); */
+    /* padding: 10px; */
+    position: relative;
+    border-radius: 5px;
+}
+.display {
+    /* border: 2px solid rgb(237, 74, 74); */
+    margin-bottom: 10px;
+    height: 85px;
+    background-color: #d79d9d;
+    border-radius: 12px;
+}
+.display input{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 14px 12px;
+    text-align: right;
+    font-size: 22px;
+    caret-color: rgba(187, 10, 10, 0.822);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.display p {
+    text-align: right;
+    font-size: 26px;
+    margin: 0 10px 15px;
+    opacity: 0.3;
+}
+#invalid {
+    position: absolute;
+    top: 6%;
+    right: 20%;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(40px);
+    color: #f0f8f8;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    z-index: 1;
+    opacity: 0;
+}
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap:10px;
+}
+button {
+    border: none;
+    background-color: rgba(0,0,0,0.4);
+    padding: 12px 18px;
+    color: #f0f8f8;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    /* box-shadow: 0px 3px 10px rgb(75, 6, 4); */
+    box-shadow: 2px 3px 10px rgba(207, 125, 122, 0.23);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+}
+button:hover {
+    background-color: rgba(0, 0, 0, 1);
+    transform: scale(1.02);
+}
+#equal {
+    grid-column: 3 / -1;
+    background-color: hsla(120, 100%, 25%, .68);
+    backdrop-filter: blur(20px);
+    color: #fff;
+}
+#clear, #delete {
+    color: rgba(222, 11, 11, 0.97);
+}
+.sign {
+    color: green;
+    font-weight: 900;
+    font-size: 28px;
+}

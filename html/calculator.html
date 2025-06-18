@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="../../img/calculator.png" type="image/x-icon">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../css/calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <h1>Calculator app</h1>
+        </div>
+        <div class="calculator">
+            <h3 id="invalid"> Invalid Format used. </h3>
+            <div class="display">
+                <input type="text"  id="box-entry" readonly>
+                <p id="result">0</p>
+            </div>
+            <div class="grid-box">
+                <button data-clear-all id="clear">AC</button>
+                <button data-delete id="delete">DEL</button>
+                <button data-sign class="sign">%</button>
+                <button data-sign  class="sign">÷</button>
+                <button data-number >7</button>
+                <button data-number >8</button>
+                <button data-number >9</button>
+                <button data-sign  class="sign">*</button>
+                <button data-number>4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button data-sign  class="sign">-</button>
+                <button data-number >1</button>
+                <button data-number >2</button>
+                <button data-number >3</button>
+                <button data-sign  class="sign">+</button>
+                <button data-number >.</button>
+                <button data-number >0</button>
+                <button data-equal id="equal">=</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- script js -->
+    <script src="../js/calculator.js"></script>
+</body>
+</html>
